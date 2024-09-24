@@ -1,4 +1,5 @@
 #include "mqtt.h"
+#include "constant.h"
 
 const char *ssid = "RD-SEAI_2.4G"; // Replace with your Wi-Fi SSID
 const char *password = "";         // Replace with your Wi-Fi password
@@ -37,7 +38,7 @@ const char *adafruitio_root_ca =
 #define AIO_SERVERPORT 8883
 
 #define AIO_USERNAME "nghiango02"
-#define AIO_KEY "aio_RpeS769I3KaD14oJnt2wke2wuj6N"
+#define AIO_KEY SECRET_AIO_KEY
 
 WiFiClientSecure client;
 Adafruit_MQTT_Client mqtt(&client, AIO_SERVER, AIO_SERVERPORT, AIO_USERNAME, AIO_KEY);

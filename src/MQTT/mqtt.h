@@ -7,12 +7,12 @@ extern const char *ssid;     // Replace with your Wi-Fi SSID
 extern const char *password; // Replace with your Wi-Fi password
 extern const char *adafruitio_root_ca;
 
-#define AIO_SERVER //"io.adafruit.com"
+#define AIO_SERVER
 
-#define AIO_SERVERPORT // 8883
+#define AIO_SERVERPORT
 
-#define AIO_USERNAME //"nghiango02"
-#define AIO_KEY      //"aio_RpeS769I3KaD14oJnt2wke2wuj6N"
+#define AIO_USERNAME
+#define AIO_KEY
 
 extern WiFiClientSecure client;
 extern Adafruit_MQTT_Client mqtt;
