@@ -38,7 +38,7 @@ const char *adafruitio_root_ca =
 #define AIO_SERVERPORT 8883
 
 #define AIO_USERNAME "nghiango02"
-#define AIO_KEY SECRET_AIO_KEY
+#define AIO_KEY SECRET_AIO_KEY // Add this constant secret key in constant.h (create it by yourself)
 
 WiFiClientSecure client;
 Adafruit_MQTT_Client mqtt(&client, AIO_SERVER, AIO_SERVERPORT, AIO_USERNAME, AIO_KEY);
